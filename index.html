@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind and Daisy Ui -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- Title -->
+    <title>Document</title>
+
+    <!-- css -->
+     <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+    <main class="container mx-auto ">
+        <h2 class="text-[#15803D] text-4xl text-center">Choose your Trees</h2>
+
+        <section>
+            <div class="grid grid-cols-12 gap-5">
+
+                <!-- category -->
+
+                <div class="col-span-3">
+                    <h2 class="font-bold text-2xl">categories</h2>
+                    <div>
+                        <button class="btn btn-success w-full mb-4">All trees</button>
+
+                        <!-- category container -->
+                         <div id="categoriesContainer" class="space-y-3">
+
+                            <!-- categories will be loaded here by js -->
+                             
+
+
+
+                         </div>
+                    </div>
+                    
+                </div>
+
+                <!-- trees -->
+                <div class="col-span-6">
+
+                    <div id="treesContainer" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+
+<!-- trees added here -->
+
+                    </div>
+
+
+<!-- spinner -->
+
+<div id="loadingSpinner" class="h-[60vh]  justify-center items-stretch hidden">
+    <span class="loading loading-spinner loading-xl"></span>
+</div>
+                     
+
+
+
+
+                </div>
+
+                <!-- cart -->
+                <div class="col-span-3">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- java -->
+     <script src="./sciptjs/scipt.js"></script>
+    
+</body>
+</html>
